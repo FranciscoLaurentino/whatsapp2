@@ -86,8 +86,8 @@ const handleLogin = (event) => {
     chat.style.display = "flex"
 
     // Criar WebSocket e conectar
-    //websocket = new WebSocket("wss://whatsapp2-backend.onrender.com")
-    websocket = new WebSocket("ws://localhost:8080")
+    websocket = new WebSocket("wss://whatsapp2-backend.onrender.com")
+    //websocket = new WebSocket("ws://localhost:8080")
 
     websocket.onopen = () => {
         console.log("Conectado ao WebSocket")
